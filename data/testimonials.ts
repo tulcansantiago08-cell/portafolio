@@ -1,5 +1,3 @@
-// TEXTO DE EJEMPLO: reemplázalo con testimonios reales (mínimo 3).
-
 export type Testimonial = {
   name: string;
   initials: string;
@@ -11,21 +9,21 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Persona de ejemplo 1",
-    initials: "P1",
-    role: "Profesor/a",
-    text: "Texto de ejemplo: aquí va la opinión de esta persona sobre tu trabajo.",
+    name: "Daniela Muñoz",
+    initials: "DM",
+    role: "Docente",
+    text: "Es una persona responsable y dedicada, siempre demuestra interés por aprender y mejorar en cada proyecto.",
   },
   {
-    name: "Persona de ejemplo 2",
-    initials: "P2",
-    role: "Compañero/a",
-    text: "Texto de ejemplo: aquí va la opinión de esta persona sobre tu trabajo.",
+    name: "Mateo Guerrero",
+    initials: "MG",
+    role: "Compañero de clase",
+    text: "Tiene facilidad para trabajar en equipo, aporta buenas ideas y busca soluciones cuando se presentan dificultades.",
   },
   {
-    name: "Persona de ejemplo 3",
-    initials: "P3",
-    role: "Cliente",
-    text: "Texto de ejemplo: aquí va la opinión de esta persona sobre tu trabajo.",
+    name: "Valentina Ortega",
+    initials: "VO",
+    role: "Compañera de proyecto",
+    text: "Es creativo, organizado y atento a los detalles; siempre busca que los resultados sean funcionales y tengan una buena presentación.",
   },
 ];
