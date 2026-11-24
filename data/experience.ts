@@ -1,5 +1,4 @@
-// TEXTO DE EJEMPLO: reemplázalo con tu trayectoria.
-// Escribe cada lista de lo más reciente a lo más antiguo.
+// Cada lista va de lo más reciente a lo más antiguo.
 
 export type ExperienceItem = {
   title: string;
@@ -11,34 +10,22 @@ export type ExperienceItem = {
 
 export const academicExperience: ExperienceItem[] = [
   {
-    title: "Título o programa de ejemplo",
-    place: "Institución de ejemplo",
-    startDate: "Año de inicio",
+    title: "Ingeniería de Software",
+    place: "Universidad Cooperativa de Colombia, Campus Pasto",
+    startDate: "2024",
     endDate: "Actualidad",
-    description: "Breve descripción de lo que estudias y tus logros.",
-  },
-  {
-    title: "Curso de ejemplo",
-    place: "Institución de ejemplo",
-    startDate: "Año de inicio",
-    endDate: "Año de fin",
-    description: "Breve descripción de lo que aprendiste.",
+    description:
+      "Quinto semestre. Programación, patrones de diseño, estructuras de datos, bases de datos y desarrollo de aplicaciones móviles y web.",
   },
 ];
 
 export const workExperience: ExperienceItem[] = [
   {
-    title: "Cargo de ejemplo",
-    place: "Empresa de ejemplo",
-    startDate: "Año de inicio",
+    title: "Desarrollador de aplicaciones móviles y web",
+    place: "Proyectos académicos y personales",
+    startDate: "2024",
     endDate: "Actualidad",
-    description: "Breve descripción de tus funciones y logros.",
-  },
-  {
-    title: "Práctica o freelance de ejemplo",
-    place: "Empresa o cliente de ejemplo",
-    startDate: "Año de inicio",
-    endDate: "Año de fin",
-    description: "Breve descripción de tus funciones y logros.",
+    description:
+      "Diseño y desarrollo de apps completas para Android, Wear OS y macOS, integrando Firebase, mapas e IA, con control de versiones en Git y pruebas automatizadas en GitHub Actions.",
   },
 ];
