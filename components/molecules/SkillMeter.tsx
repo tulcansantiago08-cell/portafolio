@@ -1,5 +1,6 @@
 import ProgressBar from "@/components/atoms/ProgressBar";
-import type { Skill } from "@/data/skills";
+// Ya no se usa: la sección de habilidades muestra etiquetas sin porcentajes.
+type Skill = { name: string; level: number };
 
 export default function SkillMeter({ skill }: { skill: Skill }) {
   return (

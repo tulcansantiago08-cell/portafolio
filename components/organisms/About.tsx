@@ -7,7 +7,7 @@ import FlyIn from "@/components/molecules/FlyIn";
 import SectionHeader from "@/components/molecules/SectionHeader";
 import SectionTemplate from "@/components/templates/SectionTemplate";
 import { profile } from "@/data/profile";
-import { skills } from "@/data/skills";
+import { mainSkills } from "@/data/skills";
 
 export default function About() {
   return (
@@ -28,8 +28,8 @@ export default function About() {
             <div>
               <Heading level={3}>Tecnologías que manejo</Heading>
               <div className="mt-3 flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <Tag key={skill.name}>{skill.name}</Tag>
+                {mainSkills.map((skill) => (
+                  <Tag key={skill}>{skill}</Tag>
                 ))}
               </div>
             </div>

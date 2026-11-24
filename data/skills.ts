@@ -1,16 +1,14 @@
-// TEXTO DE EJEMPLO: ajusta las habilidades y los niveles a los tuyos.
-
-export type Skill = {
-  name: string;
-  /** Porcentaje de 0 a 100. */
-  level: number;
+export type SkillGroup = {
+  category: string;
+  items: string[];
 };
 
-export const skills: Skill[] = [
-  { name: "HTML", level: 50 },
-  { name: "CSS", level: 50 },
-  { name: "TypeScript", level: 50 },
-  { name: "React", level: 50 },
-  { name: "Next.js", level: 50 },
-  { name: "Tailwind CSS", level: 50 },
+export const skillGroups: SkillGroup[] = [
+  { category: "Lenguajes", items: ["Kotlin", "Java", "Dart", "TypeScript", "HTML", "CSS"] },
+  { category: "Móvil", items: ["Android", "Jetpack Compose", "Wear OS", "Room", "Hilt", "Retrofit"] },
+  { category: "Multiplataforma y web", items: ["Flutter", "Next.js", "React", "Tailwind CSS"] },
+  { category: "Nube y herramientas", items: ["Firebase", "Git", "GitHub", "GitHub Actions", "Android Studio"] },
 ];
+
+/** Tecnologías principales que se muestran en "Acerca de mí". */
+export const mainSkills: string[] = ["Kotlin", "Jetpack Compose", "Firebase", "Java", "Flutter", "Next.js", "Git"];
