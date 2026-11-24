@@ -1,4 +1,3 @@
-// TEXTO DE EJEMPLO: reemplázalo con tus datos.
 import type { IconName } from "@/components/atoms/Icon";
 
 export type ContactChannel = {
@@ -15,15 +14,14 @@ export type SocialLink = {
 };
 
 export const socialLinks: SocialLink[] = [
-  { label: "GitHub", href: "https://github.com/tu-usuario", icon: "github" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/tu-usuario", icon: "linkedin" },
+  { label: "GitHub", href: "https://github.com/tulcansantiago08-cell", icon: "github" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/santiago-tulcan-249a91451", icon: "linkedin" },
 ];
 
 export const contactChannels: ContactChannel[] = [
-  { label: "Correo", value: "correo@ejemplo.com", href: "mailto:correo@ejemplo.com", icon: "mail" },
-  { label: "LinkedIn", value: "linkedin.com/in/tu-usuario", href: "https://linkedin.com/in/tu-usuario", icon: "linkedin" },
-  { label: "GitHub", value: "github.com/tu-usuario", href: "https://github.com/tu-usuario", icon: "github" },
-  { label: "Teléfono (opcional)", value: "+00 000 000 0000", href: "tel:+000000000000", icon: "phone" },
+  { label: "Correo", value: "tulcansantiago08@gmail.com", href: "mailto:tulcansantiago08@gmail.com", icon: "mail" },
+  { label: "LinkedIn", value: "linkedin.com/in/santiago-tulcan-249a91451", href: "https://www.linkedin.com/in/santiago-tulcan-249a91451", icon: "linkedin" },
+  { label: "GitHub", value: "github.com/tulcansantiago08-cell", href: "https://github.com/tulcansantiago08-cell", icon: "github" },
 ];
 
 /**
