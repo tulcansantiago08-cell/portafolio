@@ -20,10 +20,15 @@ export default function ProjectRow({ project }: { project: Project }) {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 md:max-w-xs md:justify-end">
         <Button href={project.github} external variant="secondary" icon="github">
           GitHub
         </Button>
+        {project.downloads?.map((file) => (
+          <Button key={file.href} href={file.href} download icon="download">
+            {file.label}
+          </Button>
+        ))}
         {project.demo && (
           <Button href={project.demo} external icon="external">
             Demo

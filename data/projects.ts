@@ -9,7 +9,11 @@ export type Project = {
   github: string;
   /** Enlace a la demo. Si no hay, se oculta el botón y la tarjeta abre GitHub. */
   demo?: string;
+  /** Archivos para descargar directamente (instaladores publicados en GitHub Releases). */
+  downloads?: { label: string; href: string }[];
 };
+
+const releases = "https://github.com/tulcansantiago08-cell";
 
 export const projects: Project[] = [
   {
@@ -19,6 +23,7 @@ export const projects: Project[] = [
     image: "/images/citypulse-cover.jpg",
     tags: ["Kotlin", "Jetpack Compose", "Firebase", "Room"],
     github: "https://github.com/tulcansantiago08-cell/CityPulse",
+    downloads: [{ label: "APK Android", href: `${releases}/CityPulse/releases/download/v0.1.0/CityPulse.apk` }],
   },
   {
     title: "Tanqueo",
@@ -27,6 +32,7 @@ export const projects: Project[] = [
     image: "/images/tanqueo-cover.jpg",
     tags: ["Kotlin", "Wear OS", "Room", "Gemini"],
     github: "https://github.com/tulcansantiago08-cell/Tanqueo",
+    downloads: [{ label: "APK reloj", href: `${releases}/Tanqueo/releases/download/v0.1.0/Tanqueo-reloj.apk` }],
   },
   {
     title: "PixelMate",
@@ -35,6 +41,11 @@ export const projects: Project[] = [
     image: "/images/pixelmate-cover.jpg",
     tags: ["Flutter", "Dart", "Riverpod", "macOS"],
     github: "https://github.com/tulcansantiago08-cell/PixelMate",
+    downloads: [
+      { label: "macOS", href: `${releases}/PixelMate/releases/download/v1.5.0/PixelMate-1.5.0-macOS.zip` },
+      { label: "Windows", href: `${releases}/PixelMate/releases/download/v1.5.0/PixelMate-1.5.0-Windows.zip` },
+      { label: "Linux", href: `${releases}/PixelMate/releases/download/v1.5.0/PixelMate-1.5.0-Linux-x64.tar.gz` },
+    ],
   },
   // Pendiente: el juego, cuando esté listo.
 ];
