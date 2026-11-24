@@ -23,6 +23,7 @@ export const projects: Project[] = [
     image: "/images/citypulse-cover.jpg",
     tags: ["Kotlin", "Jetpack Compose", "Firebase", "Room"],
     github: "https://github.com/tulcansantiago08-cell/CityPulse",
+    demo: "https://citypulse-demo.vercel.app",
     downloads: [{ label: "APK Android", href: `${releases}/CityPulse/releases/download/v0.1.0/CityPulse.apk` }],
   },
   {
@@ -32,6 +33,7 @@ export const projects: Project[] = [
     image: "/images/tanqueo-cover.jpg",
     tags: ["Kotlin", "Wear OS", "Room", "Gemini"],
     github: "https://github.com/tulcansantiago08-cell/Tanqueo",
+    demo: "https://tanqueo-demo.vercel.app",
     downloads: [{ label: "APK reloj", href: `${releases}/Tanqueo/releases/download/v0.1.0/Tanqueo-reloj.apk` }],
   },
   {
@@ -41,6 +43,7 @@ export const projects: Project[] = [
     image: "/images/pixelmate-cover.jpg",
     tags: ["Flutter", "Dart", "Riverpod", "macOS"],
     github: "https://github.com/tulcansantiago08-cell/PixelMate",
+    demo: "https://pixelmate-demo.vercel.app",
     downloads: [
       { label: "macOS", href: `${releases}/PixelMate/releases/download/v1.5.0/PixelMate-1.5.0-macOS.zip` },
       { label: "Windows", href: `${releases}/PixelMate/releases/download/v1.5.0/PixelMate-1.5.0-Windows.zip` },
