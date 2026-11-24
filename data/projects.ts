@@ -50,5 +50,18 @@ export const projects: Project[] = [
       { label: "Linux", href: `${releases}/PixelMate/releases/download/v1.5.0/PixelMate-1.5.0-Linux-x64.tar.gz` },
     ],
   },
-  // Pendiente: el juego, cuando esté listo.
+  {
+    title: "Retícula",
+    description:
+      "Entrenador de puntería 3D hecho en equipo: evaluación de rango, campaña, historia, modo zombi y ejercicios de coordinación ojo-mano. Se juega en el navegador, Windows, Mac y Android.",
+    image: "/images/reticula-cover.jpg",
+    tags: ["JavaScript", "Three.js", "Vite", "Electron", "Capacitor"],
+    github: "https://github.com/Ju4nK1807/Reticula",
+    demo: "https://ju4nk1807.github.io/Reticula/",
+    downloads: [
+      { label: "macOS", href: `https://github.com/Ju4nK1807/Reticula/releases/download/v1.5.0/Reticula-Mac-1.5.0-arm64.dmg` },
+      { label: "Windows", href: `https://github.com/Ju4nK1807/Reticula/releases/download/v1.5.0/Reticula-Setup-1.5.0.exe` },
+      { label: "APK Android", href: `https://github.com/Ju4nK1807/Reticula/releases/download/v1.5.0/Reticula-1.5.0.apk` },
+    ],
+  },
 ];
