@@ -1,9 +1,3 @@
-// TEXTO DE EJEMPLO: reemplázalo con tus proyectos.
-// El portafolio presenta 4 proyectos: la animación muestra una tarjeta por cada uno.
-//
-// IMPORTANTE: los videos de ejemplo son de otra persona y solo sirven para ver
-// la animación. Antes de entregar, cámbialos por videos o capturas de tus proyectos.
-
 export type Project = {
   title: string;
   description: string;
@@ -13,47 +7,34 @@ export type Project = {
   video?: string;
   tags: string[];
   github: string;
-  demo: string;
+  /** Enlace a la demo. Si no hay, se oculta el botón y la tarjeta abre GitHub. */
+  demo?: string;
 };
-
-const SAMPLE_VIDEOS = "https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev";
-const description = "Describe en una o dos líneas qué hace el proyecto y qué problema resuelve.";
 
 export const projects: Project[] = [
   {
-    title: "Proyecto de ejemplo 1",
-    description,
-    image: "/images/placeholder-project.svg",
-    video: `${SAMPLE_VIDEOS}/designs/roadster-3d-car-landing.mp4`,
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    github: "https://github.com/tu-usuario/proyecto-1",
-    demo: "https://proyecto-1.vercel.app",
+    title: "CityPulse",
+    description:
+      "App Android para viajeros que muestra conciertos, ferias y actividades que están pasando ahora en la ciudad, priorizando lo que queda cerca a pie, con mapa y rutas.",
+    image: "/images/citypulse.png",
+    tags: ["Kotlin", "Jetpack Compose", "Firebase", "Room"],
+    github: "https://github.com/tulcansantiago08-cell/CityPulse",
   },
   {
-    title: "Proyecto de ejemplo 2",
-    description,
-    image: "/images/placeholder-project.svg",
-    video: `${SAMPLE_VIDEOS}/aaaf/living-portrait-hero.mp4`,
-    tags: ["React", "CSS"],
-    github: "https://github.com/tu-usuario/proyecto-2",
-    demo: "https://proyecto-2.vercel.app",
+    title: "Tanqueo",
+    description:
+      "App para smartwatch Wear OS que registra cada tanqueo del carro o la moto, estima cuánto te dura la gasolina y te avisa cuándo volver a tanquear.",
+    image: "/images/tanqueo.png",
+    tags: ["Kotlin", "Wear OS", "Room", "Gemini"],
+    github: "https://github.com/tulcansantiago08-cell/Tanqueo",
   },
   {
-    title: "Proyecto de ejemplo 3",
-    description,
-    image: "/images/placeholder-project.svg",
-    video: `${SAMPLE_VIDEOS}/aaaf/oraciteslArea.mp4`,
-    tags: ["HTML", "JavaScript"],
-    github: "https://github.com/tu-usuario/proyecto-3",
-    demo: "https://proyecto-3.vercel.app",
+    title: "PixelMate",
+    description:
+      "Mascota en pixel art que vive en el escritorio del Mac: organiza jornadas con descansos, pone alarmas y recordatorios, y conversa por voz con IA.",
+    image: "/images/pixelmate.png",
+    tags: ["Flutter", "Dart", "Riverpod", "macOS"],
+    github: "https://github.com/tulcansantiago08-cell/PixelMate",
   },
-  {
-    title: "Proyecto de ejemplo 4",
-    description,
-    image: "/images/placeholder-project.svg",
-    video: `${SAMPLE_VIDEOS}/aaaf/medusa-jellyfish-hero.mp4`,
-    tags: ["Three.js", "WebGL"],
-    github: "https://github.com/tu-usuario/proyecto-4",
-    demo: "https://proyecto-4.vercel.app",
-  },
+  // Pendiente: el juego, cuando esté listo.
 ];

@@ -24,9 +24,11 @@ export default function ProjectRow({ project }: { project: Project }) {
         <Button href={project.github} external variant="secondary" icon="github">
           GitHub
         </Button>
-        <Button href={project.demo} external icon="external">
-          Demo
-        </Button>
+        {project.demo && (
+          <Button href={project.demo} external icon="external">
+            Demo
+          </Button>
+        )}
       </div>
     </article>
   );

@@ -11,7 +11,7 @@ import type { Ribbon, RibbonItem } from "@/lib/ribbon/createRibbon";
 
 const items: RibbonItem[] = projects.map((project) => ({
   title: project.title,
-  href: project.demo,
+  href: project.demo ?? project.github,
   image: project.image,
   video: project.video,
 }));
