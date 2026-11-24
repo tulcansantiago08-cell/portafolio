@@ -1,5 +1,3 @@
-// TEXTO DE EJEMPLO: reemplázalo con tus datos.
-
 export type QuickFact = {
   label: string;
   value: string;
@@ -20,20 +18,21 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "Nombre Apellido",
-  headline: ["NOMBRE", "APELLIDO"],
-  initials: "NA",
-  role: "Tu rol o perfil profesional",
-  disciplines: ["DISEÑO", "FRONTEND", "UX/UI"],
-  tagline: "Una frase corta que describa qué haces y qué te motiva.",
-  photo: "/images/placeholder-avatar.svg",
+  name: "Santiago David Rivas Tulcan",
+  headline: ["SANTIAGO", "RIVAS"],
+  initials: "SR",
+  role: "Estudiante de Ingeniería de Software",
+  disciplines: ["ANDROID", "FRONTEND", "UX/UI"],
+  tagline: "Convierto ideas en aplicaciones claras, útiles y bonitas de usar.",
+  photo: "/images/santiago.jpg",
   cvUrl: "/cv.pdf",
   about: [
-    "Texto de ejemplo: cuenta en primera persona quién eres, qué estudias y qué te apasiona. La guía recomienda de 3 a 5 líneas, que se puedan leer en unos 20 segundos.",
+    "Soy Santiago, estudiante de quinto semestre de Ingeniería de Software en la Universidad Cooperativa de Colombia. Me apasiona la parte del desarrollo que la gente ve y toca: diseñar interfaces limpias y convertirlas en apps que funcionen bien, en el celular, en el reloj o en el escritorio. Aprendo construyendo proyectos reales, y cada uno me deja algo más que el anterior.",
   ],
   facts: [
-    { label: "Ubicación", value: "Tu ciudad" },
-    { label: "Semestre", value: "Tu semestre" },
-    { label: "Intereses", value: "Tus intereses" },
+    { label: "Ubicación", value: "Pasto, Nariño" },
+    { label: "Semestre", value: "5.º semestre" },
+    { label: "Universidad", value: "Universidad Cooperativa de Colombia" },
+    { label: "Intereses", value: "Diseño de interfaces, videojuegos, música y fotografía" },
   ],
 };
