@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
+/*
+  TOKENS DE DISEÑO
+  Para rediseñar el portafolio, empieza aquí: los componentes solo usan estos
+  nombres (bg-primary, text-muted, rounded-card, text-display...), nunca colores directos.
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0b;
+  --foreground: #f4f1ea;
+  --surface: #111113;
+  --muted: #8d8b86;
+  --border: rgba(244, 241, 234, 0.14);
+  --primary: #f4f1ea;
+  --primary-foreground: #0a0a0b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --font-sans: var(--font-inter-tight);
+  --font-mono: var(--font-plex-mono);
+  --font-heading: var(--font-inter-tight);
+
+  --radius-control: 99px;
+  --radius-card: 0.375rem;
+
+  /* Titulares grandes: escena fija y títulos de sección */
+  --text-display: clamp(40px, 6.7vw, 130px);
+  --text-section: clamp(28px, 6.7vw, 130px);
+  --tracking-display: -0.055em;
+  --tracking-label: 0.06em;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--background);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
